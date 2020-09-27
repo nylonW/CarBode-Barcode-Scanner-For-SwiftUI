@@ -9,7 +9,7 @@
 import SwiftUI
 import AVFoundation
 
-typealias OnFound = (BarcodeData)->Void
+public typealias OnFound = (BarcodeData)->Void
 
 public struct CBScanner: UIViewRepresentable {
 
