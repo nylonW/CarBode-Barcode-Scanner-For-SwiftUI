@@ -32,7 +32,7 @@ public struct CBScanner: UIViewRepresentable {
     
     var onFound: OnFound?
     
-    init(supportBarcode:Binding<[AVMetadataObject.ObjectType]> ,
+    public init(supportBarcode:Binding<[AVMetadataObject.ObjectType]> ,
          torchLightIsOn: Binding<Bool> = .constant(false),
          scanInterval: Binding<Double> = .constant(3.0),
          cameraPosition: Binding<AVCaptureDevice.Position> = .constant(.back),
